@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GenAI CSV Insights</title>
+</head>
+<body>
+    <h2>Upload CSV file</h2>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required />
+        <button type="submit">Generate Insights</button>
+    </form>
+
+   {% if insights is not none %}
+    <h3>AI Insights</h3>
+    <div style="white-space: pre-wrap; border: 1px solid #ccc; padding: 10px;">
+        {{ insights }}
+    </div>
+    {% endif %}
+
+</body>
+</html>
