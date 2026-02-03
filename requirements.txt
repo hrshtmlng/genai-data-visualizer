@@ -1,0 +1,7 @@
+flask
+pandas
+matplotlib
+python-dotenv
+google-genai
+gunicorn
+
